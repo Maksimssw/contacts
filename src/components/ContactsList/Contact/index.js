@@ -1,19 +1,24 @@
 import styles from './index.module.css'
 import close from '../../../static/icons/close.svg'
 
-const Contact = () => {
+const Contact = (props) => {
+  const {id, tel, age, name, onRemoveContact} = props
+
   return (
     <li className={styles.contact}>
       <div className={styles['contact__text']}>
-        G
+        {name.charAt(0).toUpperCase()}
       </div>
       <div className={styles['contact__wrapper']}>
         <div className='grid-row justify-content-between'>
           <span className={styles['contact__name']}>
-            Gursky Maxim Mikhailovich
+            {name}
           </span>
 
-          <button className={styles['contact__close']}>
+          <button
+            className={styles['contact__close']}
+            onClick={() => onRemoveContact(id)}
+          >
             <img
               src={close}
               alt=''
@@ -22,11 +27,11 @@ const Contact = () => {
         </div>
 
         <div className='grid-row justify-content-between'>
-          <a href="+79531712734" className={styles['contact__tel']}>
-            +79531712734
+          <a href={tel} className={styles['contact__tel']}>
+            {tel}
           </a>
 
-          <span className={styles['contact__age']}>18</span>
+          <span className={styles['contact__age']}>{age}</span>
         </div>
       </div>
     </li>

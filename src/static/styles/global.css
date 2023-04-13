@@ -154,7 +154,9 @@ input::placeholder {
 .button {
   padding: 4px 18px;
   width: fit-content;
+  font-weight: 500;
   border-radius: 10px;
+  color: var(--color-white);
   background: var(--color-accent);
 }
 
