@@ -1,23 +1,26 @@
-import styles from  './index.module.css'
-import search from '../../../static/icons/search.svg'
+import {useState} from "react";
 
-const Search = () => {
+import styles from  './index.module.css'
+
+const Search = (props) => {
+  const {onGetSearch} = props
+  const [text, setText] = useState('')
+
+  const addChangeHandler = (event) => {
+    setText(event.target.value)
+    onGetSearch(event.target.value)
+  }
+
   return (
-    <form className={styles.search}>
+    <div className={styles.search}>
       <input
         type='text'
         placeholder='Search...'
+        value={text}
+        onChange={addChangeHandler}
         className={styles['search__input']}
       />
-
-      <button className='button button_search'>
-        <img
-          src={search}
-          alt=""
-          className={styles['search__icon']}
-        />
-      </button>
-    </form>
+    </div>
   )
 }
 
