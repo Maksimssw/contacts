@@ -1,0 +1,22 @@
+.search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 16px;
+  margin-bottom: 32px;
+  padding: 10px 0;
+}
+
+.search__input {
+  border-color: var(--color-white);
+  color: var(--color-white);
+  background: var(--color-gray600);
+}
+
+.search__input::placeholder {
+  color: var(--color-white);
+}
+
+.search__icon {
+  width: 16px;
+  height: 16px;
+}

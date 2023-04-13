@@ -1,0 +1,25 @@
+.contacts {
+  padding: 20px;
+  background: var(--color-gray600);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.contacts__list {
+  display: grid;
+  grid-row-gap: 32px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.contacts__list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.contacts__list::-webkit-scrollbar-track {
+  background: var(--color-gray600);
+}
+
+.contacts__list::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+}

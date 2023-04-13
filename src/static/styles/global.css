@@ -43,7 +43,7 @@ body::-webkit-scrollbar-track {
   background: var(--color-white);
 }
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-black);
+  background-color: var(--color-gray600);
   border-radius: 20px;
 }
 
@@ -156,6 +156,12 @@ input::placeholder {
   width: fit-content;
   border-radius: 10px;
   background: var(--color-accent);
+}
+
+.button_search {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper {

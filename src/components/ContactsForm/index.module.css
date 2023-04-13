@@ -15,6 +15,7 @@
 }
 
 .form__headline i {
+  margin-left: 12px;
   line-height: 78px;
   font-size: 52px;
   font-weight: 600;
