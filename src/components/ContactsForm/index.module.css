@@ -1,0 +1,28 @@
+.form {
+  display: grid;
+  grid-row-gap: 60px;
+  justify-content: center;
+  padding: 94px 65px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  background: var(--color-white);
+}
+
+.form__headline {
+  line-height: 78px;
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.form__headline i {
+  line-height: 78px;
+  font-size: 52px;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-accent)
+}
+
+.form__wrapper {
+  display: grid;
+  grid-row-gap: 28px;
+}
